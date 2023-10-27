@@ -26,6 +26,7 @@ interface Props {
 
 export default function FeedScreen({ navigation }: Props) {
   // TODO: Initialize a list of SocialModel objects in state.
+  const [list, setList] = useState<SocialModel[]>([]);
 
   /* TYPESCRIPT HINT: 
     When we call useState(), we can define the type of the state
